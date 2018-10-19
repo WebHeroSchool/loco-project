@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link href="./fonts.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet">
     <title>LOCO</title>
 </head>
 
 <body>
     <div class="promo">
-        <div class="container promo__container">
-            <header class="header promo__header">
-                <div class="header__content">
-                    <a class="header__logo" href=""><img class="header__logo_img" src="./images/logo.png" alt="LOCO"></a>
-                    <div class="custom-select header__select">
-                        <select>
-                            <option value="RU">RU</option>
-                        </select>
-                    </div>
+        <header class="header promo__header">
+            <div class="header__container">
+            </div>
+
+            <div class="header__content">
+                <a class="header__logo" href="">
+                    <img class="header__logo_img" src="./images/logo.png" alt="LOCO">
+                    <img class="header__logo_img--hidden" src="./images/logo-black.png" alt="LOCO-black">
+                </a>
+                <div class="custom-select header__select">
+                    <select>
+                        <option value="RU">RU</option>
+                    </select>
                 </div>
-                <div class="header__button--menu"></div>
-            </header>
+            </div>
+            <div class="header__button--menu"></div>
+        </header>
+        <div class="container promo__container">
             <section class="content promo__content">
-                <div class="content__item">
-                    <img class="content__img" src="./images/girl.png" girl">
+                <div class="content__item content__item--img">
+                    <img class="content__img" src="./images/girl.png" alt="girl">
+                    <img class="content__img--hidden" src="./images/girl-mobile.png" alt="girl-mobile">
+                    <img class="content__img--vector-mobile" src="./images/vector-mobile.png" alt="vector-mobile">
                 </div>
                 <div class="content__item">
                     <h1 class="title content__title">Новая коллекция</h1>
@@ -54,9 +64,12 @@
             </footer>
         </div>
     </div>
-    <section class="product">
+    <!-- <section class="product">
         <div class="container product__container">
-            <img class="product__img" src=# alt="bag">
+            <div class="product__gallery">
+                <img class="product__img-gray" src="./images/grey-bag.png" alt="bag-grey">
+                <img class="product__img-rose" src="./images/pink-bag.png" bag-rose">
+            </div>
             <div class="product__content">
                 <h1 class="title product__title">Кожанный клатч</h1>
                 <h2 class="product__subtitle">осенняя коллекция</h2>
@@ -68,19 +81,19 @@
                 <form class="product__form">
                     <div class="profile product__profile">
                         <div class="select profile__select">
-                            <label class="select select--grey">
+                            <label class="select__item select__item--grey">
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="select select--pink select--checked">
+                            <label class="select__item select__item--pink">
                                 <input type="radio" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="select select--blue">
+                            <label class="select__item select__item--blue">
                                 <input type="radio" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="select select--green">
+                            <label class="select__item select__item--green">
                                 <input type="radio" name="radio">
                                 <span class="checkmark"></span>
                             </label>
@@ -96,10 +109,11 @@
                     </div>
                     <button class="button button__counter">Добавить в корзину</button>
                 </form>
+                <div class="product__action">
+                    <a class="link product__link" href="#">Другие товары на LOCO.COM</a>
+                </div>
             </div>
-            <div class="product__action">
-                <a class="link product__link" href="#">Другие товары на LOCO.COM</a>
-            </div>
+
         </div>
     </section>
     <section class="product-set">
@@ -123,6 +137,7 @@
         </div>
         <div class="product-set__action">
             <a class="link product-set__link" href="#">Другие товары на LOCO.COM</a>
+            <div class="content__vector"></div>
         </div>
         </div>
         <div class="created">
@@ -130,7 +145,7 @@
             <img class="created__img" src="#" alt="created-by">
         </div>
     </section>
-    </div>
+    </div> -->
 </body>
 
 </html>
